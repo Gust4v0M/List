@@ -1,7 +1,71 @@
-#txt{
-    background-color: rebeccapurple;
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    overflow: hidden;
+
+}
+.container1{
+    padding: 40px;
+    background-image: linear-gradient( 30deg,
+    #062726,
+    #230c33);
+    display: block;
+    height:650px ;
+    margin-left:650px ;
+    max-width: 650px;
+    margin-top: -650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
 }
 
-.fundo-azul{
-    background-color: fuchsia;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:650px ;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 650px;
+    background-image: linear-gradient( 30deg,
+    #230c33,
+    #062726);
+ 
+
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: seashell ;
+  }
+    
+#write{
+    font-size: 35px;
+    border-radius: 10px;
+    border-color: black;
+    background-image: linear-gradient(30deg,
+    #230c33,
+    #062726
+    );
+    color:white
+}
+
+#bnt{
+    border-radius: 5px;
+    margin: 10px;
+    padding:15px;
+    background-color:black;
+    display: inline;
+    color:seashell;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    padding: 3px;
 }
