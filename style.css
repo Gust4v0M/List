@@ -1,10 +1,13 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
 } 
 
 body{
     overflow: hidden;
+    background-image: linear-gradient( 30deg,
+    #062726,
+    #8d2828);
 
 }
 .container1{
@@ -12,14 +15,14 @@ body{
     background-image: linear-gradient( 30deg,
     #062726,
     #230c33);
-    display: block;
     height:650px ;
     margin-left:650px ;
-    max-width: 650px;
+    width: 650px;
     margin-top: -650px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 
     color: white;
 }
@@ -31,7 +34,7 @@ body{
     height:650px ;
     box-sizing: border-box;
     text-align: center;
-    max-width: 650px;
+    width: 650px;
     background-image: linear-gradient( 30deg,
     #230c33,
     #062726);
@@ -62,10 +65,16 @@ body{
     background-color:black;
     display: inline;
     color:seashell;
-}
+}*/
 
 li{
-    list-style: none;
-    text-align: center;
-    padding: 3px;
+     /* list-style: ;  */
+     text-align: center;
+    padding: 5px;
+    display: inline;
 }
+
+#check{
+    padding: 5px;
+}
+ 
