@@ -2,7 +2,7 @@ let lista = document.getElementById("lista");
 let bnt = document.getElementById("bnt");
 let input = document.getElementById("write");
 let check = document.getElementById("check");
-
+let remove = document.getElementById("remove")
 
 
 onload = function (){
@@ -33,21 +33,13 @@ bnt.addEventListener("click", function () {
                    <br>`;
 
 
+                   
+     remove.addEventListener('click', function(){
         
-
+      arr.splice(index, 1)
+     })
 
  console.log(array)
       });
-
-      lista.addEventListener("click", function(){
-      let del = document.createElement('del')
-      
-        del.appendChild(lista)
-
-
-
-        console.log("vamos ver".tagDel)
-      })
-      
 
 
