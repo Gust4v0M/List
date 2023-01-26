@@ -1,4 +1,4 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
 } 
@@ -65,15 +65,19 @@ body{
     background-color:black;
     display: inline;
     color:seashell;
-}*/
-
-li{
-     /* list-style: ;  */
-     text-align: center;
-    padding: 5px;
-    display: inline;
 }
 
+li{
+     list-style: none;  
+     text-align: center;
+     display: inline;
+     padding-bottom: 40px;
+}
+/* 
+img{
+    padding-left:100px;
+
+} */
 #check{
     padding: 5px;
 }

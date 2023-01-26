@@ -1,45 +1,117 @@
 let lista = document.getElementById("lista");
 let bnt = document.getElementById("bnt");
 let input = document.getElementById("write");
-let check = document.getElementById("check");
-let remove = document.getElementById("remove")
 
 
-onload = function (){
+var array = [];
 
-  let nome = JSON.parse(localStorage.getItem("tarefas" ) || [] );
+function Addlist(){
+  let valor = input.value;
+  
+  array.push([[valor]]);
 
-
-  lista.innerHTML += ` <li>
-                      ${nome}
-                    </li>
-                    <br>`;
-
-console.log(nome)
+  show_list();
 }
 
-bnt.addEventListener("click", function () {
-  var array = [];
-  var valor = input.value;
+function deleteIten(arr, index){
+
+  arr.splice(index, i);
+
+  show_list();
+}
+
+function show_list(){
+  lista.innerHTML = ''
+
+  for(i = 0; i<array.length; i++){
+      lista.innerHTML 
+      += `<input type= checkbox>${array[i]}
+
+      <img src="./trash.png" height="18px" onclick="deleteIten(array, ${i});">
+    
+      <br>`
+      localStorage.setItem("tarefas", JSON.stringify(array))
+
+      console.log(array)
+  }
+
+}
+
+ let check = document.getElementsByTagName("button")
  
-  array.push([valor]);
+ 
 
- localStorage.setItem("tarefas", JSON.stringify(array))     
+onload = function(){
+
+  let nome = JSON.parse(localStorage.getItem("tarefas"))
+
+  lista.innerHTML += `
+                      ${nome}
+                       <br>`;
+  
+}
 
 
- lista.innerHTML += `<input type="checkbox"> <li>
-                     ${array}
-                   </li>
-                   <br>`;
+
+let teste = document.getElementById("teste")
+
+
+let del = document.createElement("DEL")
+
+del.appendChild(teste)
+
+document.body.appendChild(del)
+
+
+
+// onload = function (){
+
+//   let nome = JSON.parse(localStorage.getItem("tarefas" ) || [] );
+
+
+//   lista.innerHTML += ` <li>
+//                       ${nome}
+//                     </li>
+//                     <br>`;
+
+// console.log(nome)
+// }
+
+// bnt.addEventListener("click", function () {
+//   var array = [];
+//   var valor = input.value;
+ 
+//   array.push([valor]);
+
+//  localStorage.setItem("tarefas", JSON.stringify(array))     
+
+
+//  lista.innerHTML += `<input type="checkbox"> <li>
+//                      ${array}
+//                    </li>
+//                    <br>`;
 
 
                    
-     remove.addEventListener('click', function(){
+//      remove.addEventListener('click', function teste(arr, index){
         
-      arr.splice(index, 1)
-     })
+//       arr.splice(index, 1)
 
- console.log(array)
-      });
+
+
+//         array.splice(array.indexOf(), 1)
+//         array.innerHTML += array
+
+//         del()
+//       })
+
+
+//       function del(){
+//         teste(array,)
+//       }
+
+
+//  console.log(array)
+//       });
 
 
